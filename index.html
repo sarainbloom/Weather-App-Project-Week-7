@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,11 +16,12 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="search" class="search-form-button" />
@@ -29,7 +31,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">San Francisco</h1>
+            <h1 class="weather-app-city" id="city">San Francisco</h1>
             <p class="weather-app-details">
               <strong>Saturday 9:59</strong>, clear sky <br />Humidity:
               <strong>64%</strong>, Wind: <strong>2.57km/h</strong>
@@ -59,5 +61,6 @@
         >
       </footer>
     </div>
-  </body>
+    <script src="src/index.js"></script>
+
 </html>

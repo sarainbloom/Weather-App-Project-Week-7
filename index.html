@@ -15,18 +15,33 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="enter a city" required />
-          <input type="submit" value="search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
 
       <main>
-        <div>
-          <h1>San Francisco</h1>
-          <p>Saturday 9:59, clear sky <br />Humidity: 64%, Wind: 2.57km/h</p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">San Francisco</h1>
+            <p class="weather-app-details">
+              <strong>Saturday 9:59</strong>, clear sky <br />Humidity:
+              <strong>64%</strong>, Wind: <strong>2.57km/h</strong>
+            </p>
+          </div>
+
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">☁️</div>
+            <div class="weather-app-temperature-value">12</div>
+            <div class="weather-app-unit">°F</div>
+          </div>
         </div>
-        <div>☁️ 12°F</div>
       </main>
 
       <footer>
